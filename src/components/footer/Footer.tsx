@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <div className="relative w-full h-full flex flex-col items-center justify-center">
+    <div className="relative w-full h-full flex flex-col items-center justify-center bg-gray-100">
       <div className="flex flex-col justify-start items-start mx-auto pt-10 w-[80rem]">
         <div className="flex flex-row justify-start items-start">
           <div className="flex flex-col p-5 mx-10 items-start justify-start ">
@@ -88,9 +88,9 @@ const Footer = () => {
             <h1 className="text-start ml-1 text-2xl font-normal text-blue-700 font-serif">
               Get Cinnamon in your inbox
             </h1>
-            <form>
-              <input />
-              <button></button>
+            <form className="flex flex-row items-center justify-center h-fit bg-white outline outline-1 outline-gray-400 ml-1 rounded-sm">
+              <input placeholder="Enter Your Email" type="email" className="pl-2 text-sm font-thin font-serif focus:outline-none"/>
+              <button className="w-20 h-full p-1 bg-blue-500 text-sm text-white font-thin font-serif ">Submit</button>
             </form>
             <a></a>
           </div>
