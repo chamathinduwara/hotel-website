@@ -13,19 +13,22 @@ import "./Slider.module.css";
 
 const Slider = () => {
   return (
-    <div className="relative h-fit">
+    <div className="relative h-[rem100]">
       <div className="absolute z-20 bottom-6  left-60">
         <Search />
       </div>
       <div className="relative flex flex-col bg">
-        <Navigation />
+        <div className="absolute w-full">
+          <Navigation />
+        </div>
+
         <div className="">
           <Image
             src="/background/bg2.jpg"
             alt="background"
             width={1920}
             height={1080}
-            className="flex flex-col h-[36rem] max-w-full bg"
+            className="flex flex-col h-[40rem] max-w-full bg"
           />
         </div>
       </div>

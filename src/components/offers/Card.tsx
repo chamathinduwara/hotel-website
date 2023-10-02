@@ -30,12 +30,14 @@ const Card = ({ id, url, alt, heading, event, disc, offer }: CardProps) => {
         <p className="pt-1 text-sm text-gray-800">{heading}</p>
       </div>
       <div className="flex flex-col items-center justify-center w-fit my-2 p-1">
-        <p className="w-96 text-md font-bold text-center">{event}</p>
-        <p className="w-96 text-sm font-light text-center">{disc}</p>
+        <p className="w-96 h-10 text-md font-bold text-center">{event}</p>
+        <p className="w-96 mt-1 h-10 text-sm font-light text-center">{disc}</p>
       </div>
       <div className="flex flex-col items-center justify-center w-fit my-2 p-1">
-        <p className="w-80 text-md font-semibold text-center">{offer}</p>
-        <button className="outline outline-1 px-2 py-1 m-2 text-yellow-800 hover:bg-yellow-300">View Details</button>
+        <p className="w-80 h-10 text-md font-semibold text-center">{offer}</p>
+        <button className="outline outline-1 px-2 py-1 m-2 text-yellow-800 hover:bg-yellow-300">
+          View Details
+        </button>
       </div>
     </div>
   );
