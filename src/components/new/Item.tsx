@@ -9,7 +9,7 @@ type ItemProps = {
   url: string;
   alt: string;
   name: string;
-  disc: string
+  disc: string;
 };
 
 const Item = ({ id, url, alt, name, disc }: ItemProps) => {
@@ -36,7 +36,9 @@ const Item = ({ id, url, alt, name, disc }: ItemProps) => {
               animate ? "-translate-y-1/3" : ""
             } flex items-end justify-center h-full w-full m-0 transition duration-500 `}
           >
-            <p className=" w-full font-bold text-xl p-10 text-neutral-50">{name}</p>
+            <p className=" w-full font-bold text-xl p-10 text-neutral-50">
+              {name}
+            </p>
           </div>
         </div>
         <Image
@@ -77,7 +79,7 @@ const Item = ({ id, url, alt, name, disc }: ItemProps) => {
                 onClick={togglePopup}
                 className="w-20 py-1 bg-red-500 mx-5 rounded-lg text-white text-md font-serif font-thin outline outline-2 outline-gray-300 hover:bg-red-400"
               >
-                Cancle
+                Cancel
               </button>
             </div>
           </div>
